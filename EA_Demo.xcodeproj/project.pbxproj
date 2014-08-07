@@ -23,6 +23,25 @@
 		698031C219845A7A0090C5AD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6980319E19845A790090C5AD /* UIKit.framework */; };
 		698031CA19845A7A0090C5AD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 698031C819845A7A0090C5AD /* InfoPlist.strings */; };
 		698031CC19845A7A0090C5AD /* EA_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 698031CB19845A7A0090C5AD /* EA_DemoTests.m */; };
+		69A1ECE41991262700682952 /* SalesEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A1ECE31991262700682952 /* SalesEventViewController.m */; };
+		69A1ECE71991265100682952 /* SalesEventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A1ECE61991265100682952 /* SalesEventTableViewCell.m */; };
+		69A1ECEA1991281200682952 /* DataObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A1ECE91991281200682952 /* DataObjects.m */; };
+		69A1ECEC1991294500682952 /* country_product_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 69A1ECEB1991294500682952 /* country_product_data.plist */; };
+		69A1ECEE1991313E00682952 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A1ECED1991313E00682952 /* Parse.framework */; };
+		69A1ECF01991316A00682952 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A1ECEF1991316A00682952 /* AudioToolbox.framework */; };
+		69A1ECF21991317600682952 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A1ECF11991317600682952 /* CFNetwork.framework */; };
+		69A1ECF41991318300682952 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A1ECF31991318300682952 /* CoreLocation.framework */; };
+		69A1ECF61991319200682952 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A1ECF51991319200682952 /* libz.dylib */; };
+		69A1ECF81991319900682952 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A1ECF71991319900682952 /* MobileCoreServices.framework */; };
+		69A1ECFA199131A600682952 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A1ECF9199131A600682952 /* QuartzCore.framework */; };
+		69A1ECFC199131B300682952 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A1ECFB199131B300682952 /* SystemConfiguration.framework */; };
+		69A1ECFE199131C000682952 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A1ECFD199131C000682952 /* Security.framework */; };
+		69A1ED00199131CA00682952 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A1ECFF199131CA00682952 /* StoreKit.framework */; };
+		69A1ED0319926D1000682952 /* SalesEventDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A1ED0219926D1000682952 /* SalesEventDetailViewController.m */; };
+		69A1ED0619926D2D00682952 /* SalesEventregisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A1ED0519926D2D00682952 /* SalesEventregisterViewController.m */; };
+		69A1ED0819926E1B00682952 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A1ED0719926E1B00682952 /* MapKit.framework */; };
+		69A1ED0A19927A0D00682952 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A1ED0919927A0D00682952 /* MessageUI.framework */; };
+		69A1ED0C1993C11300682952 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A1ED0B1993C11300682952 /* EventKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +77,30 @@
 		698031C719845A7A0090C5AD /* EA_DemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EA_DemoTests-Info.plist"; sourceTree = "<group>"; };
 		698031C919845A7A0090C5AD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		698031CB19845A7A0090C5AD /* EA_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EA_DemoTests.m; sourceTree = "<group>"; };
+		69A1ECE21991262700682952 /* SalesEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalesEventViewController.h; sourceTree = "<group>"; };
+		69A1ECE31991262700682952 /* SalesEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalesEventViewController.m; sourceTree = "<group>"; };
+		69A1ECE51991265100682952 /* SalesEventTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalesEventTableViewCell.h; sourceTree = "<group>"; };
+		69A1ECE61991265100682952 /* SalesEventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalesEventTableViewCell.m; sourceTree = "<group>"; };
+		69A1ECE81991281200682952 /* DataObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataObjects.h; sourceTree = "<group>"; };
+		69A1ECE91991281200682952 /* DataObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataObjects.m; sourceTree = "<group>"; };
+		69A1ECEB1991294500682952 /* country_product_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = country_product_data.plist; sourceTree = "<group>"; };
+		69A1ECED1991313E00682952 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		69A1ECEF1991316A00682952 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		69A1ECF11991317600682952 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		69A1ECF31991318300682952 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		69A1ECF51991319200682952 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		69A1ECF71991319900682952 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		69A1ECF9199131A600682952 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		69A1ECFB199131B300682952 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		69A1ECFD199131C000682952 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		69A1ECFF199131CA00682952 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		69A1ED0119926D1000682952 /* SalesEventDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalesEventDetailViewController.h; sourceTree = "<group>"; };
+		69A1ED0219926D1000682952 /* SalesEventDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalesEventDetailViewController.m; sourceTree = "<group>"; };
+		69A1ED0419926D2D00682952 /* SalesEventregisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalesEventregisterViewController.h; sourceTree = "<group>"; };
+		69A1ED0519926D2D00682952 /* SalesEventregisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalesEventregisterViewController.m; sourceTree = "<group>"; };
+		69A1ED0719926E1B00682952 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		69A1ED0919927A0D00682952 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		69A1ED0B1993C11300682952 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +108,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69A1ED0C1993C11300682952 /* EventKit.framework in Frameworks */,
+				69A1ED0A19927A0D00682952 /* MessageUI.framework in Frameworks */,
+				69A1ECF41991318300682952 /* CoreLocation.framework in Frameworks */,
+				69A1ED0819926E1B00682952 /* MapKit.framework in Frameworks */,
+				69A1ECEE1991313E00682952 /* Parse.framework in Frameworks */,
+				69A1ED00199131CA00682952 /* StoreKit.framework in Frameworks */,
+				69A1ECFE199131C000682952 /* Security.framework in Frameworks */,
+				69A1ECFC199131B300682952 /* SystemConfiguration.framework in Frameworks */,
+				69A1ECFA199131A600682952 /* QuartzCore.framework in Frameworks */,
+				69A1ECF81991319900682952 /* MobileCoreServices.framework in Frameworks */,
+				69A1ECF61991319200682952 /* libz.dylib in Frameworks */,
+				69A1ECF21991317600682952 /* CFNetwork.framework in Frameworks */,
+				69A1ECF01991316A00682952 /* AudioToolbox.framework in Frameworks */,
 				6980319D19845A790090C5AD /* CoreGraphics.framework in Frameworks */,
 				6980319F19845A790090C5AD /* UIKit.framework in Frameworks */,
 				6980319B19845A790090C5AD /* Foundation.framework in Frameworks */,
@@ -106,6 +162,19 @@
 		6980319919845A790090C5AD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				69A1ED0B1993C11300682952 /* EventKit.framework */,
+				69A1ED0919927A0D00682952 /* MessageUI.framework */,
+				69A1ED0719926E1B00682952 /* MapKit.framework */,
+				69A1ECFF199131CA00682952 /* StoreKit.framework */,
+				69A1ECFD199131C000682952 /* Security.framework */,
+				69A1ECFB199131B300682952 /* SystemConfiguration.framework */,
+				69A1ECF9199131A600682952 /* QuartzCore.framework */,
+				69A1ECF71991319900682952 /* MobileCoreServices.framework */,
+				69A1ECF51991319200682952 /* libz.dylib */,
+				69A1ECF31991318300682952 /* CoreLocation.framework */,
+				69A1ECF11991317600682952 /* CFNetwork.framework */,
+				69A1ECEF1991316A00682952 /* AudioToolbox.framework */,
+				69A1ECED1991313E00682952 /* Parse.framework */,
 				6980319A19845A790090C5AD /* Foundation.framework */,
 				6980319C19845A790090C5AD /* CoreGraphics.framework */,
 				6980319E19845A790090C5AD /* UIKit.framework */,
@@ -127,6 +196,17 @@
 				698031B619845A790090C5AD /* SecondViewController.m */,
 				698031B819845A790090C5AD /* Images.xcassets */,
 				698031A119845A790090C5AD /* Supporting Files */,
+				69A1ECE21991262700682952 /* SalesEventViewController.h */,
+				69A1ECE31991262700682952 /* SalesEventViewController.m */,
+				69A1ECE51991265100682952 /* SalesEventTableViewCell.h */,
+				69A1ECE61991265100682952 /* SalesEventTableViewCell.m */,
+				69A1ECE81991281200682952 /* DataObjects.h */,
+				69A1ECE91991281200682952 /* DataObjects.m */,
+				69A1ECEB1991294500682952 /* country_product_data.plist */,
+				69A1ED0119926D1000682952 /* SalesEventDetailViewController.h */,
+				69A1ED0219926D1000682952 /* SalesEventDetailViewController.m */,
+				69A1ED0419926D2D00682952 /* SalesEventregisterViewController.h */,
+				69A1ED0519926D2D00682952 /* SalesEventregisterViewController.m */,
 			);
 			path = EA_Demo;
 			sourceTree = "<group>";
@@ -236,6 +316,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69A1ECEC1991294500682952 /* country_product_data.plist in Resources */,
 				698031B119845A790090C5AD /* Main_iPad.storyboard in Resources */,
 				698031B919845A790090C5AD /* Images.xcassets in Resources */,
 				698031AE19845A790090C5AD /* Main_iPhone.storyboard in Resources */,
@@ -260,7 +341,12 @@
 			files = (
 				698031B719845A790090C5AD /* SecondViewController.m in Sources */,
 				698031AB19845A790090C5AD /* AppDelegate.m in Sources */,
+				69A1ECEA1991281200682952 /* DataObjects.m in Sources */,
+				69A1ECE41991262700682952 /* SalesEventViewController.m in Sources */,
+				69A1ECE71991265100682952 /* SalesEventTableViewCell.m in Sources */,
 				698031B419845A790090C5AD /* FirstViewController.m in Sources */,
+				69A1ED0319926D1000682952 /* SalesEventDetailViewController.m in Sources */,
+				69A1ED0619926D2D00682952 /* SalesEventregisterViewController.m in Sources */,
 				698031A719845A790090C5AD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,6 +482,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EA_Demo/EA_Demo-Prefix.pch";
 				INFOPLIST_FILE = "EA_Demo/EA_Demo-Info.plist";
@@ -409,6 +499,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EA_Demo/EA_Demo-Prefix.pch";
 				INFOPLIST_FILE = "EA_Demo/EA_Demo-Info.plist";
@@ -476,6 +570,7 @@
 				698031D119845A7A0090C5AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		698031D219845A7A0090C5AD /* Build configuration list for PBXNativeTarget "EA_DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +579,7 @@
 				698031D419845A7A0090C5AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

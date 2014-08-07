@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Country</key>
+	<array>
+		<string>Afghanistan</string>
+		<string>Iran</string>
+		<string>Iraq</string>
+		<string>Syria</string>
+		<string>Lebanon</string>
+		<string>Jordan</string>
+		<string>KSA</string>
+		<string>Kuwait</string>
+		<string>Qatar</string>
+		<string>UAE</string>
+		<string>Oman</string>
+		<string>Yemen</string>
+		<string>Egypt</string>
+		<string>Sudan</string>
+		<string>Lybia</string>
+		<string>Tunisia</string>
+		<string>Algeria</string>
+		<string>Morroco</string>
+		<string>Sudan</string>
+		<string>India</string>
+		<string>Japan</string>
+		<string>Turkey</string>
+		<string>France</string>
+		<string>Pakistan</string>
+		<string>Srilanka</string>
+		<string>Maldives</string>
+		<string>Kenya</string>
+		<string>Tanzania</string>
+		<string>Uganda</string>
+		<string>South Africa</string>
+	</array>
+	<key>Product</key>
+	<array>
+		<string>A</string>
+		<string>B</string>
+		<string>C</string>
+		<string>D</string>
+		<string>E</string>
+		<string>F</string>
+		<string>G</string>
+		<string>H</string>
+		<string>I</string>
+		<string>J</string>
+		<string>K</string>
+		<string>L</string>
+		<string>M</string>
+		<string>N</string>
+		<string>O</string>
+		<string>P</string>
+		<string>Q</string>
+		<string>R</string>
+		<string>S</string>
+		<string>T</string>
+		<string>U</string>
+		<string>V</string>
+		<string>W</string>
+		<string>X</string>
+		<string>Y</string>
+		<string>Z</string>
+	</array>
+</dict>
+</plist>

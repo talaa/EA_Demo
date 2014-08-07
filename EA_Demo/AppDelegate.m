@@ -7,15 +7,23 @@
 //
 
 #import "AppDelegate.h"
+#import <Parse/Parse.h>
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [Parse setApplicationId:@"I1Kd5FWv9NTFB5Y0BJC9UsI3cHhFjOEZIgN1uPNJ"
+                  clientKey:@"QAC2PlGXlcOUJUTcRS2cMEwcVGQ7DSlSNeNuhlvA"];
+    [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge|
+     UIRemoteNotificationTypeAlert|
+     UIRemoteNotificationTypeSound];
+    [self readingdatafromParse];
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     return YES;
 }
-							
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -41,6 +49,44 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)application:(UIApplication *)application
+didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+    // Store the deviceToken in the current installation and save it to Parse.
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation setDeviceTokenFromData:deviceToken];
+    [currentInstallation saveInBackground];
+}
+
+- (void)application:(UIApplication *)application
+didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    [PFPush handlePush:userInfo];
+}
+-(void)readingdatafromParse{
+    PFQuery *query = [PFQuery queryWithClassName:@"Sales_Event"];
+    
+    
+     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+     if (!error) {
+     // The find succeeded.
+     NSLog(@"Successfully retrieved %d entries from the appdelegate.", objects.count);
+     // Do something with the found objects
+     
+     [DataObjects SetSaleseventArray:objects];
+     [self reloadInputViews];
+     //NSLog(@"The Array retrieved is %@",tablearray);
+     for (PFObject *object in objects) {
+     NSLog(@"The new entries from appdelegate %@", object.objectId);
+     }
+     } else {
+     // Log details of the failure
+     NSLog(@"Error: %@ %@", error, [error userInfo]);
+     }
+     }];
+
+
 }
 
 @end

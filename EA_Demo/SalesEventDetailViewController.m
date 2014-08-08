@@ -27,7 +27,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    PFFile *imageparse=[[DataObjects saleseventdict] objectForKey:@"Company_logo"];
+    PFFile *imageparse=[[DataObjects saleseventdict] objectForKey:@"Company_Logo"];
     [imageparse getDataInBackgroundWithBlock:^(NSData *imageData, NSError *error) {
         if (!error) {
             UIImage *image = [UIImage imageWithData:imageData];
@@ -36,13 +36,15 @@
             NSLog(@"I have error Downloading the image");
         }
     }];
-    PFFile *imageparse2=[[DataObjects saleseventdict] objectForKey:@"Event_Logo"];
-    [imageparse2 getDataInBackgroundWithBlock:^(NSData *imageData, NSError *error) {
+    
+    PFFile *imageparse2=[[DataObjects saleseventdict] objectForKey:@"Event_logo"];
+    [imageparse2 getDataInBackgroundWithBlock:^(NSData *imageData2, NSError *error) {
         if (!error) {
-            UIImage *image = [UIImage imageWithData:imageData];
-            eventlogo.image=image;
+            UIImage *image2 = [UIImage imageWithData:imageData2];
+            eventlogo.image=image2;
         }
     }];
+    
     eventdescription.text=[[DataObjects saleseventdict]objectForKey:@"Event_Description"];
 
 }

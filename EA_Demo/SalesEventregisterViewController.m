@@ -52,13 +52,13 @@
     [store requestAccessToEntityType:EKEntityTypeEvent completion:^(BOOL granted, NSError *error) {
         if (!granted) { return; }
         EKEvent *event = [EKEvent eventWithEventStore:store];
-        event.title = @"Event Title";
-        event.startDate = [NSDate date]; //today
-        event.endDate = [event.startDate dateByAddingTimeInterval:60*60];  //set 1 hour meeting
+        event.title = [[DataObjects saleseventdict]objectForKey:@"EventName"];
+        event.startDate = [[DataObjects saleseventdict]objectForKey:@"Date"];
+        event.endDate = [event.startDate dateByAddingTimeInterval:24*60*60];  //set 1 Day meeting
         [event setCalendar:[store defaultCalendarForNewEvents]];
         NSError *err = nil;
         [store saveEvent:event span:EKSpanThisEvent commit:YES error:&err];
-        NSString *savedEventId = event.eventIdentifier;  //this is so you can access this event later
+        //NSString *savedEventId = event.eventIdentifier;  //this is so you can access this event later
     }];
 }
 -(IBAction)Askquestion:(id)sender{

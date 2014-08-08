@@ -12,11 +12,13 @@
 #import "SalesEventDetailViewController.h"
 @interface SalesEventViewController ()
 @property (nonatomic,strong)NSArray *tablearray;
+@property (nonatomic,strong)NSMutableArray *country;
+@property (nonatomic,strong)NSMutableArray *product;
 @end
 
 @implementation SalesEventViewController
 
-@synthesize filtercountries,filterproducts,tablearray,Filtercountry,Filterproduct,saleseventtable;
+@synthesize filtercountries,filterproducts,tablearray,Filtercountry,Filterproduct,saleseventtable,country,product;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -33,6 +35,15 @@
     //NSLog(@"The array from app delegate is %@",[DataObjects SalesEventArray]);
     //[query whereKey:@"playerName" equalTo:@"Dan Stemkoski"];
     //tablearray=[query findObjects];
+    
+    country =[[NSMutableArray alloc]init];
+    product =[[NSMutableArray alloc]init];
+    for (NSMutableDictionary *dict in tablearray) {
+        //[country arrayByAddingObject:[dict objectForKey:@"Country"]];
+        [country addObject:[dict objectForKey:@"Country"]];
+        [product addObject:[dict objectForKey:@"Product"]];
+    //NSLog(@"The Countries are %@",[dict objectForKey:@"Country"]);
+    }
     tablearray=[DataObjects SalesEventArray];
     /*
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
@@ -160,9 +171,11 @@
 //Prepare th UI
 -(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
     if (pickerView.tag==1) {
-        return [[DataObjects Countries]count];
+        //return [[DataObjects Countries]count];
+        return [country count];
     }else{
-        return [[DataObjects Products]count];
+        //return [[DataObjects Products]count];
+        return [product count];
     }
     
 }
@@ -174,9 +187,11 @@
 -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
     
     if (pickerView.tag==1) {
-        return [DataObjects Countries][row];
+        //return [DataObjects Countries][row];
+        return country[row];
     }else{
-        return [DataObjects Products][row];
+        //return [DataObjects Products][row];
+        return product[row];
     }
     
 }
@@ -184,10 +199,12 @@
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
     
     if (pickerView.tag==1) {
-        self.Filtercountry.text = [DataObjects Countries][row];
+        //self.Filtercountry.text = [DataObjects Countries][row];
+        self.Filtercountry.text = country[row];
         [self.Filtercountry resignFirstResponder];
     }else{
-    self.Filterproduct.text = [DataObjects Products][row];
+    //self.Filterproduct.text = [DataObjects Products][row];
+        self.Filterproduct.text = product[row];
     [self.Filterproduct resignFirstResponder];
     }
 }
